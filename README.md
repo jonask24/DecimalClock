@@ -1,6 +1,6 @@
 # Decimal Clock
 
-A demonstrator application that showcases an innovative timekeeping system rooted in the decimal number system. This app transforms traditional date and time into a decimal format, where whole numbers signify the total number of days since the new year, and decimal values indicate the fraction of the current day that has elapsed.
+A demonstrator application that showcases an innovative timekeeping system rooted in the decimal number system. This app transforms traditional date and time into a decimal format, where whole numbers signify the total number of days since the new year, and decimal values indicate the fraction of the day elapsed.
 
 
 ## Features
