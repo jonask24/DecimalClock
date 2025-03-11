@@ -9,7 +9,7 @@ A demonstrator application that showcases an innovative timekeeping system roote
 - **Calendar-based Conversion**: Select any date and time to see its decimal representation
 - **Decimal Stopwatch**: Measure time intervals using decimal day units with SI prefixes
 
-![Current Time Screen](./screenshots/screen1.png) ![Calendar Conversion](./screenshots/screen2.png) ![Decimal Stopwatch](./screenshots/screen3.png)
+![Current Time](./Screenshots/Clock.png) ![Calendar](./Screenshots/Picker.png) ![Stopwatch](./Screenshots/Stopwatch.png)
 
 ## About the Time System
 
