@@ -47,17 +47,9 @@ While impractical for everyday use (since no one uses this time system), it demo
 - **Target SDK**: Android 15.0 VanillaIceCream (API 35)
 - **Programming Language**: Kotlin
 - **UI Implementation**: XML layouts
-- **Screen Support**: Currently only tested on 1080x2400 resolution
 - **Privacy Friendly**: Works completely offline with no data collection
 
 
 ## Installation
 
 Download the latest .apk file from the [Releases](../../releases) section and install it directly on your Android device
-
-## Limitations
-
-- Basic UI design
-- Limited screen resolution testing
-- No practical use case
-

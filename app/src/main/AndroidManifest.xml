@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DecimalClock"
         android:forceDarkAllowed="false"
-        tools:targetApi="31">
+        tools:targetApi="35">
         <activity
             android:name=".ui.clock.ClockActivity"
             android:exported="true">
