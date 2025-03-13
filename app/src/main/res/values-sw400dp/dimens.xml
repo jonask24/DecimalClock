@@ -15,15 +15,15 @@
     <dimen name="bottom_nav_height">70dp</dimen>        <!-- Height of bottom navigation bar -->
 
     <!-- ==================== CLOCK ACTIVITY ==================== -->
-    <dimen name="text_clock_time">35sp</dimen>          <!-- Main time display (HH:MM:SS) on clock screen -->
-    <dimen name="text_clock_label">50sp</dimen>         <!-- Section labels like "Time", "Date", "Mixed" on clock screen -->
-    <dimen name="text_decimal">35sp</dimen>             <!-- Decimal time values (fraction of day) on clock screen -->
+    <dimen name="text_clock_time">30sp</dimen>          <!-- Main time display (HH:MM:SS) on clock screen -->
+    <dimen name="text_clock_label">45sp</dimen>         <!-- Section labels like "Time", "Date", "Mixed" on clock screen -->
+    <dimen name="text_decimal">30sp</dimen>             <!-- Decimal time values (fraction of day) on clock screen -->
 
     <!-- ==================== CALENDAR ACTIVITY ==================== -->
-    <dimen name="text_calendar_datetime">50sp</dimen>   <!-- Date and time text in calendar screen -->
+    <dimen name="text_calendar_datetime">45sp</dimen>   <!-- Date and time text in calendar screen -->
 
     <!-- ==================== STOPWATCH ACTIVITY ==================== -->
-    <dimen name="text_stopwatch_display">60sp</dimen>   <!-- Large numbers (hours/minutes/seconds) on stopwatch -->
-    <dimen name="text_stopwatch_unit">28sp</dimen>      <!-- Unit labels (mD, dD, etc.) on stopwatch -->
-    <dimen name="text_stopwatch_label">28sp</dimen>     <!-- Labels like "Hours", "Minutes", "Seconds" on stopwatch -->
+    <dimen name="text_stopwatch_display">55sp</dimen>   <!-- Large numbers (hours/minutes/seconds) on stopwatch -->
+    <dimen name="text_stopwatch_unit">25sp</dimen>      <!-- Unit labels (mD, dD, etc.) on stopwatch -->
+    <dimen name="text_stopwatch_label">25sp</dimen>     <!-- Labels like "Hours", "Minutes", "Seconds" on stopwatch -->
 </resources>
