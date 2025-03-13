@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==================== COMMON VALUES ==================== -->
+    <!-- These dimensions are used across multiple activities -->
+    <dimen name="margin_standard">18dp</dimen>          <!-- Standard margin between elements -->
+    <dimen name="margin_large">28dp</dimen>             <!-- Larger margin for more separation -->
+    <dimen name="margin_xlarge">36dp</dimen>            <!-- Extra large margin for major section separation -->
+    <dimen name="padding_button">14dp</dimen>           <!-- Internal padding for buttons -->
+    <dimen name="text_button">25sp</dimen>              <!-- Text on all buttons throughout the app -->
+    <dimen name="text_spacer_height">30dp</dimen>       <!-- Spacer height between text elements -->
+    <dimen name="button_spacer_height">30dp</dimen>     <!-- Spacer height before buttons -->
+    <dimen name="button_height">73dp</dimen>            <!-- Standard height for buttons -->
+    <dimen name="button_width">184dp</dimen>            <!-- Standard width for buttons -->
+    <dimen name="bottom_spacer_height">80dp</dimen>      <!-- Bottom space height in dp units -->
+    <dimen name="bottom_nav_height">70dp</dimen>        <!-- Height of bottom navigation bar -->
+
+    <!-- ==================== CLOCK ACTIVITY ==================== -->
+    <dimen name="text_clock_time">45sp</dimen>          <!-- Main time display (HH:MM:SS) on clock screen -->
+    <dimen name="text_clock_label">60sp</dimen>         <!-- Section labels like "Time", "Date", "Mixed" on clock screen -->
+    <dimen name="text_decimal">45sp</dimen>             <!-- Decimal time values (fraction of day) on clock screen -->
+
+    <!-- ==================== CALENDAR ACTIVITY ==================== -->
+    <dimen name="text_calendar_datetime">63sp</dimen>   <!-- Date and time text in calendar screen -->
+
+    <!-- ==================== STOPWATCH ACTIVITY ==================== -->
+    <dimen name="text_stopwatch_display">68sp</dimen>   <!-- Large numbers (hours/minutes/seconds) on stopwatch -->
+    <dimen name="text_stopwatch_unit">35sp</dimen>      <!-- Unit labels (mD, dD, etc.) on stopwatch -->
+    <dimen name="text_stopwatch_label">35sp</dimen>     <!-- Labels like "Hours", "Minutes", "Seconds" on stopwatch -->
+</resources>

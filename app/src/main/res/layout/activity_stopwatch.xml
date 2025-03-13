@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:padding="0dp"
+    tools:context=".ui.stopwatch.StopwatchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomSpacer">
+
+        <!-- Main content container that will be pushed to the bottom -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Main time display container -->
+            <LinearLayout
+                android:id="@+id/timeDisplayContainer"
+                style="@style/Widget.DecimalClock.LinearLayout.Vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_xlarge">
+
+                <!-- Hours row -->
+                <LinearLayout style="@style/Widget.DecimalClock.LinearLayout.Horizontal">
+                    <TextView
+                        android:id="@+id/hoursDisplay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        style="@style/TextAppearance.DecimalClock.StopwatchDisplay"
+                        android:paddingEnd="@dimen/margin_standard" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hours"
+                        style="@style/TextAppearance.DecimalClock.StopwatchLabel"
+                        android:paddingStart="@dimen/margin_standard" />
+                </LinearLayout>
+
+                <!-- Minutes row -->
+                <LinearLayout style="@style/Widget.DecimalClock.LinearLayout.Horizontal">
+                    <TextView
+                        android:id="@+id/minutesDisplay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        style="@style/TextAppearance.DecimalClock.StopwatchDisplay"
+                        android:paddingEnd="@dimen/margin_standard" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Minutes"
+                        style="@style/TextAppearance.DecimalClock.StopwatchLabel"
+                        android:paddingStart="@dimen/margin_standard" />
+                </LinearLayout>
+
+                <!-- Seconds row -->
+                <LinearLayout style="@style/Widget.DecimalClock.LinearLayout.Horizontal">
+                    <TextView
+                        android:id="@+id/secondsDisplay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00"
+                        style="@style/TextAppearance.DecimalClock.StopwatchDisplay"
+                        android:paddingEnd="@dimen/margin_standard" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Seconds"
+                        style="@style/TextAppearance.DecimalClock.StopwatchLabel"
+                        android:paddingStart="@dimen/margin_standard" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Decimal Time Display Container -->
+            <LinearLayout
+                android:id="@+id/decimalContainer"
+                style="@style/Widget.DecimalClock.LinearLayout.Horizontal"
+                app:layout_constraintTop_toBottomOf="@id/timeDisplayContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <TextView
+                    android:id="@+id/decimalTimeDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.000"
+                    style="@style/TextAppearance.DecimalClock.StopwatchDisplay"
+                    android:paddingEnd="@dimen/margin_standard" />
+
+                <TextView
+                    android:id="@+id/decimalUnitDisplay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="mD [milliday]"
+                    style="@style/TextAppearance.DecimalClock.StopwatchUnit"
+                    android:paddingStart="@dimen/margin_standard" />
+            </LinearLayout>
+
+            <!-- Control Buttons -->
+            <LinearLayout
+                android:id="@+id/controlButtonsContainer"
+                style="@style/Widget.DecimalClock.LinearLayout.Vertical"
+                app:layout_constraintTop_toBottomOf="@id/decimalContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_xlarge"
+                android:gravity="center">
+
+                <!-- Start/Stop and Reset buttons row -->
+                <LinearLayout
+                    android:id="@+id/startResetButtons"
+                    style="@style/Widget.DecimalClock.LinearLayout.Horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp">
+
+                    <Button
+                        android:id="@+id/btnStartStop"
+                        style="@style/Widget.DecimalClock.Button"
+                        android:text="START"
+                        android:layout_marginEnd="@dimen/margin_standard" />
+
+                    <Button
+                        android:id="@+id/btnReset"
+                        style="@style/Widget.DecimalClock.Button"
+                        android:text="RESET"
+                        android:layout_marginStart="@dimen/margin_standard" />
+                </LinearLayout>
+
+                <!-- Add 1 Minute and Add 1 Hour buttons row -->
+                <LinearLayout
+                    android:id="@+id/timeAdjustButtons"
+                    style="@style/Widget.DecimalClock.LinearLayout.Horizontal"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnAddMinute"
+                        style="@style/Widget.DecimalClock.Button"
+                        android:text="+1 MIN"
+                        android:layout_marginEnd="@dimen/margin_standard" />
+
+                    <Button
+                        android:id="@+id/btnAddHour"
+                        style="@style/Widget.DecimalClock.Button"
+                        android:text="+1 HOUR"
+                        android:layout_marginStart="@dimen/margin_standard" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/bottomSpacer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_spacer_height"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        style="@style/Widget.DecimalClock.BottomNavigationView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

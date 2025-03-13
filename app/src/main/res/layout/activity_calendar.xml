@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    android:padding="0dp"
+    tools:context=".ui.calendar.CalendarActivity">
+
+    <!-- Remove the top spacer completely -->
+    <!-- Top spacer that adjusts based on screen size -->
+    <!-- <Space -->
+    <!--     android:id="@+id/topSpacer" -->
+    <!--     android:layout_width="match_parent" -->
+    <!--     android:layout_height="@dimen/top_spacer_height" -->
+    <!--     app:layout_constraintTop_toTopOf="parent" -->
+    <!--     app:layout_constraintStart_toStartOf="parent" -->
+    <!--     app:layout_constraintEnd_toEndOf="parent" /> -->
+
+    <!-- Bottom spacer above the navigation bar -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomSpacer">
+        
+        <!-- Main content container that will be pushed to the bottom -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/txtSelectedDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Select a date and time"
+                style="@style/TextAppearance.DecimalClock.CalendarDateTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textSpacer1" />
+
+            <Space
+                android:id="@+id/textSpacer1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_spacer_height"
+                app:layout_constraintTop_toBottomOf="@+id/txtSelectedDateTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txtConvertedDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.DecimalClock.CalendarDateTime"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/textSpacer1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_standard" />
+
+            <Space
+                android:id="@+id/textSpacer2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_spacer_height"
+                app:layout_constraintTop_toBottomOf="@+id/txtConvertedDateTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                style="@style/Widget.DecimalClock.LinearLayout.Horizontal"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@+id/textSpacer2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/margin_large">
+
+                <Button
+                    android:id="@+id/btnSelectDate"
+                    style="@style/Widget.DecimalClock.Button"
+                    android:text="Date"
+                    android:onClick="onSelectDateClick"
+                    android:layout_marginEnd="@dimen/margin_standard" />
+
+                <Button
+                    android:id="@+id/btnSelectTime"
+                    style="@style/Widget.DecimalClock.Button"
+                    android:text="Time"
+                    android:onClick="onSelectTimeClick"
+                    android:layout_marginStart="@dimen/margin_standard" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/bottomSpacer"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_spacer_height"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        style="@style/Widget.DecimalClock.BottomNavigationView"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

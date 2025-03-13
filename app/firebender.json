@@ -1,0 +1,12 @@
+{
+  "rules": [
+    "Use all project files for context"
+  ],
+  "search": {
+    "enabled": true,
+    "maxResults": 10,
+    "searchDepth": "full",
+    "includePatterns": ["**/*.kt", "**/*.xml", "**/*.java", "**/*.gradle"],
+    "excludePatterns": ["**/build/**", "**/.gradle/**", "**/generated/**"]
+  }
+}

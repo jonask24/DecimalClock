@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Text Styles -->
+   <style name="TextAppearance.DecimalClock.Base" parent="TextAppearance.MaterialComponents.Body1">
+       <item name="android:textColor">@color/main_text</item>
+       <item name="android:textSize">16sp</item>
+   </style>
+   
+   <!-- Header Styles -->
+   <style name="TextAppearance.DecimalClock.Header" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_clock_label</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:gravity">center</item>
+   </style>
+   
+   <!-- Clock Display Styles -->
+   <style name="TextAppearance.DecimalClock.ClockTime" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_clock_time</item>
+       <item name="android:gravity">center</item>
+   </style>
+   
+   <style name="TextAppearance.DecimalClock.DecimalTime" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_decimal</item>
+       <item name="android:gravity">center</item>
+   </style>
+   
+   <!-- Stopwatch Display Styles -->
+   <style name="TextAppearance.DecimalClock.StopwatchDisplay" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_stopwatch_display</item>
+       <item name="android:textStyle">bold</item>
+       <item name="android:gravity">end</item>
+   </style>
+   
+   <style name="TextAppearance.DecimalClock.StopwatchLabel" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_stopwatch_label</item>
+       <item name="android:gravity">start</item>
+   </style>
+   
+   <style name="TextAppearance.DecimalClock.StopwatchUnit" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_stopwatch_unit</item>
+       <item name="android:gravity">start</item>
+   </style>
+   
+   <!-- Calendar Styles -->
+   <style name="TextAppearance.DecimalClock.CalendarDateTime" parent="TextAppearance.DecimalClock.Base">
+       <item name="android:textSize">@dimen/text_calendar_datetime</item>
+       <item name="android:gravity">center</item>
+   </style>
+   
+   <!-- Button Styles -->
+   <style name="Widget.DecimalClock.Button" parent="Widget.MaterialComponents.Button">
+       <item name="android:layout_width">@dimen/button_width</item>
+       <item name="android:layout_height">@dimen/button_height</item>
+       <item name="android:textSize">@dimen/text_button</item>
+       <item name="backgroundTint">@color/button_background</item>
+       <item name="android:textColor">@color/button_text</item>
+       <item name="cornerRadius">8dp</item>
+   </style>
+   
+   <!-- Bottom Navigation Styles -->
+   <style name="TextAppearance.BottomNavigationView.Large" parent="TextAppearance.MaterialComponents.Caption">
+       <item name="android:textSize">12sp</item>
+   </style>
+   
+   <style name="Widget.DecimalClock.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+       <item name="itemIconSize">32dp</item>  
+       <item name="itemIconTint">@color/navigation_item_color</item>
+       <item name="itemTextColor">@color/navigation_item_color</item>
+       <item name="itemBackground">@drawable/navigation_item_background</item>
+       <item name="android:background">@color/nav_menu_background</item>
+       <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNavigationView.Large</item>
+       <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNavigationView.Large</item>
+       <item name="labelVisibilityMode">labeled</item>
+       <item name="itemHorizontalTranslationEnabled">false</item>
+       <item name="elevation">0dp</item>
+       <item name="itemRippleColor">@android:color/transparent</item>
+   </style>
+   
+   <!-- Layout Styles -->
+   <style name="Widget.DecimalClock.LinearLayout.Horizontal" parent="">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:orientation">horizontal</item>
+       <item name="android:layout_marginTop">@dimen/margin_standard</item>
+   </style>
+   
+   <style name="Widget.DecimalClock.LinearLayout.Vertical" parent="">
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">wrap_content</item>
+       <item name="android:orientation">vertical</item>
+       <item name="android:layout_marginTop">@dimen/margin_standard</item>
+   </style>
+   
+    <!-- Add this to your styles.xml -->
+    <style name="Widget.App.BottomNavigationView.Item" parent="">
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+</resources>

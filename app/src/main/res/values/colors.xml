@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- ==================== THEME COLORS ==================== -->
+   <!-- Used in themes.xml and activity backgrounds -->
+   <color name="main_background">#1D1D1D</color>        <!-- Main dark gray background for all activities -->
+   <color name="surface_background">#1F1F1F</color>     <!-- Slightly lighter surface color used in themes -->
+   <color name="status_bar">#000000</color>             <!-- Black status bar color -->
+   
+   <!-- ==================== TEXT COLORS ==================== -->
+   <!-- Used in styles.xml and themes.xml for text styling -->
+   <color name="main_text">#FFFFFF</color>              <!-- Primary white text color -->
+   <color name="secondary_text">#CCCCCC</color>         <!-- Secondary light gray text color -->
+   
+   <!-- ==================== BUTTON COLORS ==================== -->
+   <!-- Used for button styling in styles.xml and as theme colors -->
+   <color name="button_background">#64B5F6</color>      <!-- Light blue primary button color -->
+   <color name="button_background_dark">#1E88E5</color> <!-- Darker blue for pressed states -->
+   <color name="button_text">#000000</color>            <!-- Black text color for buttons -->
+   
+   <!-- ==================== NAVIGATION COLORS ==================== -->
+   <!-- Used for bottom navigation in styles.xml and navigation_item_color.xml -->
+   <color name="nav_menu_background">#0F0F0F</color>    <!-- Very dark gray for navigation bar background -->
+   <color name="default_navigation_icon">#64B5F6</color> <!-- Light blue for inactive navigation icons/text -->
+   <color name="active_navigation_icon">#6520FF</color>  <!-- Purple for active navigation icon/text -->
+</resources>
