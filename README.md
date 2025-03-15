@@ -38,4 +38,4 @@ While impractical for everyday use (since no one uses this time system), it demo
 
 ## Installation
 
-Download the latest .apk file from the [Releases](../../releases) section and install it directly on your Android device
+Download the latest `.apk` file from the [Releases](../../releases) section and install it directly on your Android device
